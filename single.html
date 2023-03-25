@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Single</title>
+	<link rel="stylesheet"  href="single.css">
+</head>
+<body>
+	<div class="container">
+		<h1>SIGN UP</h1>
+		<div class="person">
+		<img class="owner" src="own.png">
+	    </div>
+		<form id="form1">
+				<input type="text" placeholder="Surname" required>
+				<input type="text" placeholder="Other name" required>
+				<input type="text" placeholder="Phone Number" required>
+			    <input type="email" placeholder="Email= abcd123@gmail.com" required>
+				<input type="password" id="first" placeholder="Password" required>
+				<input type="password" id="second" placeholder="Confirm password" required>
+			<div class="btn-box">
+				<button type="submit" id="next1">Submit</button>
+			</div>
+		</form>
+<script>
+	var next1 = document.getElementById("next1");
+	var p1 = document.getElementById("first");
+	var p2 = document.getElementById("second");
+
+		next1.onclick =function(){
+			window.Confirm('Allow browser to save password.')
+		}
+		/*
+		if (p1==p2){
+			console.log("OK")
+		}
+		else{
+			next1.onSubmit =function(){
+			window.notify("The password doesn't match")
+			}
+		}
+</script>
+</body>
+</html>

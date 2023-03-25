@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiform Tutorial</title>
+	<link rel="stylesheet"  href="../Multiform/multiform.css">
+</head>
+<body>
+	<div class="container">
+		<form id="form1">
+			<h3>PERSONAL DETAILS</h3>
+				<input type="text" placeholder="First name" required="">
+				<input type="text" placeholder="Second name" required="">
+				<input type="text" placeholder="Phone number" required="">
+			<div class="btn-box">
+				<button type="button" id="next1">Next</button>
+			</div>
+		</form>
+		
+		<form id="form2">
+			<h3>SOCIAL ACCOUNTS</h3>
+				<input type="text" placeholder="Facebook">
+				<input type="text" placeholder="Twitter">
+				<input type="text" placeholder="Instagram" optional>
+			<div class="btn-box">
+				<button type="button" id="back1">Back</button>
+				<button type="button" id="next2">Next</button>
+			</div>
+		</form>
+
+		<form id="form3">
+			<h3>OTHER DETAILS</h3>
+				<input type="email" placeholder="Email">
+				<input type="password" placeholder="password">
+				<input type="password" placeholder="Confirm password">
+			<div class="btn-box">
+				<button type="button" id="back2">Back</button>
+				<button type="submit" id="last">Submit</button>
+			</div>
+		</form>
+			<div class="step-row">
+				<div id="progress"></div>
+			    <div class="step-col"><small>Step 1</small></div>
+				<div class="step-col"><small>Step 2</small></div>
+				<div class="step-col"><small>Step 3</small></div>
+		    </div>
+	</div>
+<script src="multiform.js"></script>
+</body>
+</html>
